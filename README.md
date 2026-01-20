@@ -7,15 +7,30 @@ In theory a person could have several of these files each with a unique configur
 
 ## What is the point?
 It took me time to come up with a working controll pannel that existed with the CNCjs widgets. 
-This will effect Marlin - CNC users the best. 
+This will work for Marlin CNC users the best but other should be able to use it too. 
 
 ## Why is the file in a zip folder?
 If I don't do this then the file might become hidden.
 Zip insures you can access and download as intended. 
 
-## How to use this?
-It goes in the root level of your user directory in windows, for now.  
-Sorry, some one will need to inform me where it lives on other systems. 
+### How to use this?
+- Locate the file of the same name in your root user directory.
+- open it in a text editor, winmerge or visual studio code.
+- find and COPY the entire value of secret from line 11.
+- Save that string temporrary to a note pad. Copy the original file to a safe spot, even a zip folder if needed.
+- copy the file supplied to you here in to the root level of your user directory.
+- edit that file, as noted above, and paste in the secret value from your file.
+- thats it save the file and launch CNCjs.
+- all else fails reload your own file that you backed up. You did make a back up right?  
+Sorry, some one will need to inform me where it lives on other systems.
+
+### Why copy Secret?
+Secret is a string generated just for your machine. Mine won't work. Trying to load a different secret value makes stuff break. I know this becuase across system wipe and reinstall this is what worked. 
+
+### Can I still rearrange the screen and customize it?
+Of course. This is just a launch pad, a share of configurations. Nothing more. 
+What you see and how its arranged is still up to you as it has always been. 
+Within limits exsiting of CNCjs of course. 
 
 ## Am I affiliated with CNCjs?
 No. I am a user. I was a sponsor for over a year. But after development stopped, and I no longer recognized the last active listed developer, I stopped sponsoring.
